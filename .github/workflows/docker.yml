@@ -1,3 +1,5 @@
+# this app is for handling docker image creation
+
 name: Publish Docker image
 
 on:
@@ -7,9 +9,10 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       -
+        # git clone, essentially
         name: Checkout
         uses: actions/checkout@v2
       -
@@ -39,5 +42,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            jamtur01/animal-farm-nodejs:latest
-            ghcr.io/jamtur01/animal-farm-nodejs:latest
+            ekelly55/animal-farm-nodejs:latest
+            ghcr.io/ekelly55/animal-farm-nodejs:latest

@@ -1,3 +1,5 @@
+# this workflow is for testing the application files
+
 name: Animal Farm Node.js CI
 
 on:
@@ -14,13 +16,17 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      # git clone, essentially
     - name: Checkout repository
       uses: actions/checkout@v2
+      # install node
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
         node-version: '18.x'
+        # run yarn to install node modules - why not npm?
     - name: Run Yarn
       run: yarn
+      # run tests. most important before merge or push
     - name: Run tests
       run: yarn test
