@@ -44,3 +44,5 @@ jobs:
           tags: |
             ekelly55/animal-farm-nodejs:latest
             ghcr.io/ekelly55/animal-farm-nodejs:latest
+
+# test w/ existing dockerhub repo
