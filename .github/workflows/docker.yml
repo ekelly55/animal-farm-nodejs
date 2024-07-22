@@ -45,4 +45,4 @@ jobs:
             ekelly55/animal-farm-nodejs:latest
             ghcr.io/ekelly55/animal-farm-nodejs:latest
 
-# test w/ existing dockerhub repo again
+# test w/ existing dockerhub repo again w/ updated token permissions
