@@ -3,13 +3,13 @@
 name: Publish Docker image
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
   build-and-push:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       -
         # git clone, essentially
