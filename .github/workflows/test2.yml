@@ -1,8 +1,11 @@
 # this workflow is for testing the application files
 
-name: Animal Farm Node.js CI
+name: branch test
 
 on:
+  push:
+    branches:
+      - dev
   pull_request:
     branches:
       - main
